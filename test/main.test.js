@@ -6,7 +6,7 @@ const {
   getMostCommonGenres,
   getMostPopularBooks,
   getMostPopularAuthors,
-} = require("../public/src/home.js");
+} = require("../src/home.js");
 
 const authorsFixture = require("./fixtures/authors.fixture");
 const booksFixture = require("./fixtures/books.fixture");

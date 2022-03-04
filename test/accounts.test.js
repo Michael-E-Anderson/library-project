@@ -4,7 +4,7 @@ const {
   sortAccountsByLastName,
   getTotalNumberOfBorrows,
   getBooksPossessedByAccount,
-} = require("../public/src/accounts.js");
+} = require("../src/accounts");
 
 const accountsFixture = require("./fixtures/accounts.fixture");
 const authorsFixture = require("./fixtures/authors.fixture");

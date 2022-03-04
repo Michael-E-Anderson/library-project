@@ -4,7 +4,7 @@ const {
   findBookById,
   partitionBooksByBorrowedStatus,
   getBorrowersForBook,
-} = require("../public/src/books.js");
+} = require("../src/books.js");
 
 const accountsFixture = require("./fixtures/accounts.fixture");
 const authorsFixture = require("./fixtures/authors.fixture");

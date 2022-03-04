@@ -1,3 +1,4 @@
+const booksModule = require("./books.js");
 function getTotalBooksCount(books) {
   return books.length
 }
@@ -31,7 +32,6 @@ function getMostPopularBooks(books) {
 }
 
 function getMostPopularAuthors(books, authors) {
-  const booksModule = require("./books.js");
   const result = books.reduce((acc, book) => { const author = booksModule.findAuthorById(authors, book.authorId);
   const name = author.name.first + " " + author.name.last; 
   const count = book.borrows.length;

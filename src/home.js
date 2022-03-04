@@ -1,8 +1,4 @@
 const booksModule = require("./books.js");
-<<<<<<< HEAD
-
-=======
->>>>>>> 45f6fe298d5a76fb5d64658fd389804ca2b595de
 function getTotalBooksCount(books) {
   return books.length
 }
@@ -48,7 +44,6 @@ function _sortObjectByVals(obj) {
   });
 }
 function getMostPopularAuthors(books, authors) {
-<<<<<<< HEAD
   const count = books.reduce((acc, { authorId, borrows }) => {
     if (acc[authorId]) {
       acc[authorId].push(borrows.length);
@@ -74,17 +69,6 @@ function getMostPopularAuthors(books, authors) {
       return { name, count: count[authorId] };
     })
     .slice(0, 5);
-=======
-  const result = books.reduce((acc, book) => { const author = booksModule.findAuthorById(authors, book.authorId);
-  const name = author.name.first + " " + author.name.last; 
-  const count = book.borrows.length;
-  let found = acc.find((accElement) => accElement.name === name);
-  if (found) found.count += book.borrows.length;
-  else acc.push({name, count}) 
-  return acc; }, []);
-  result.sort((a, b) => b.count - a.count)
-  return result.slice(0, 5)
->>>>>>> 45f6fe298d5a76fb5d64658fd389804ca2b595de
 }
 
 module.exports = {
